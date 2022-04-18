@@ -1,0 +1,22 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build manim (quality low)",
+            "type": "shell",
+            "promptOnClose": true,
+            "command": "manim -p -ql \"${file}\"",
+            "problemMatcher": [],
+            "group": "build"
+        },
+        {
+            "label": "build manim (quality high)",
+            "type": "shell",
+            "command": "manim -p -qh \"${file}\"",
+            "problemMatcher": [],
+            "group": "build"
+        }
+    ]
+}
